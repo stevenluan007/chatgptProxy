@@ -47,6 +47,17 @@ https://openai-proxy-api.pages.dev/api
 
 ## 使用CloudFlare Pages进行中转
 
+### 一键部署
+
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)]([https://deploy.workers.cloudflare.com/?url=https://github.com/PublicAffairs/openai-gemini](https://deploy.workers.cloudflare.com/?url=https://github.com/stevenluan007/chatgptProxy
+))
+- Alternatively can be deployed manually pasting content of [`src/worker.mjs`](src/worker.mjs)
+  to https://workers.cloudflare.com/playground (see there `Deploy` button).
+- Alternatively can be deployed with [cli](https://developers.cloudflare.com/workers/wrangler/):
+  `wrangler deploy`
+- Serve locally: `wrangler dev`
+- _Worker_ [limits](https://developers.cloudflare.com/workers/platform/limits/#worker-limits)
+
 ### 1、部署中转API+ Openai API余额查询 (使用sess-xxxx的Authorization查询，有效时间未知)
 
 > [官方文档](https://developers.cloudflare.com/pages)
